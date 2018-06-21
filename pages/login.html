@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>登录</title>
+  <link rel="stylesheet" href="../css/login.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/build.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="loginPanel">
+      <!-- 左边图片 -->
+      <div class="left">
+        <img src="../images/login.jpg" class="loginImg">
+      </div>
+      <!-- 右边登录信息输入 -->
+      <div class="right">
+        <form class="loginArea" id="login" name="login" action="../php/login.php" method="post">
+          <h3 class="title">登录</h3>
+          <div class="inputStuID">
+            <p>学号/工号</p>
+            <input type="text" id="id" name="id">
+          </div>
+          <div class="inputPsw">
+            <p>密码</p>
+            <input type="password" id="password" name="password">
+          </div>
+          <div class="radios">
+            <div class="radio radio-info radio-inline">
+              <input type="radio" id="students" value="students" name="character" checked>
+              <label for="students">学生</label>
+            </div>
+            <div class="radio radio-info radio-inline">
+              <input type="radio" id="teacher" value="teacher" name="character">
+              <label for="teacher">教师</label>
+            </div>
+            <div class="radio radio-info radio-inline">
+              <input type="radio" id="manager" value="manager" name="character">
+              <label for="manager">管理员</label>
+            </div>
+          </div>
+          <div class="buttonWrapper">
+            <button type="submit" name="loginBtn" id="loginBtn">登录</button>
+          </div>
+          <div class="forgetWrapper">
+            <a href="resetPsw.html" class="forgetText">忘记密码?</a>
+          </div>
+      </div>
+      </form>
+    </div>
+  </div>
+  <script src="../js/jquery-3.0.0.min.js"></script>
+  <script src="../js/login.js"></script>
+</body>
+
+</html>
